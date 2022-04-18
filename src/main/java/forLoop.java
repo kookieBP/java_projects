@@ -112,7 +112,26 @@ public class forLoop {
 
 
 
+        //배열로 삼각형 만들기
 
+        int[][] z = new int[5][5];
+        int e=0;
+
+
+
+        for(int r = 0;r<5;r++){  //r는 행, l는 열
+            for(int l=r;l<5;l++){
+                e= e+1;
+                z[r][l] = e;
+
+            }
+        }
+        for(int r = 0; r<5;r++){
+            for(int l =0; l<5; l++){
+                System.out.print(z[r][l]+"\t");
+            }
+            System.out.println();
+        }
 
 
 
